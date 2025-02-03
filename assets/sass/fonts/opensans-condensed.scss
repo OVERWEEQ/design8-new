@@ -1,0 +1,12 @@
+$fonts: (
+  ('OpenSansCondensed-Light.woff2', 300, normal, 'woff2'),
+  ('OpenSansCondensed-Regular.woff2', 400, normal, 'woff2'),
+  ('OpenSansCondensed-Medium.woff2', 500, normal, 'woff2'),
+  ('OpenSansCondensed-SemiBold.woff2', 600, normal, 'woff2'),
+  ('OpenSansCondensed-Bold.woff2', 700, normal, 'woff2'),
+  ('OpenSansCondensed-ExtraBold.woff2', 800, normal, 'woff2'),
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('OpenSans Condensed', '/fonts/opensans-condensed/#{$url}', $weight, $style, $format);
+}

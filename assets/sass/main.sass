@@ -1,0 +1,139 @@
+// mixins
+@import 'media'
+@import 'vendors/_font-face'
+// fonts
+@import 'fonts/gothamxnarrow'
+@import 'fonts/fjallaone'
+@import 'fonts/slatepro'
+@import 'fonts/opensans-condensed'
+@import 'fonts/opensans'
+@import 'fonts/crimson-text'
+// others
+@import 'variables'
+
+// shared components
+@import 'components/module-title'
+//
+@import 'components/module-desc'
+//
+@import 'components/popular-names'
+//
+@import 'components/header'
+//
+@import 'components/module-home'
+//
+@import 'components/module-names'
+//
+@import 'components/module-letters'
+//
+@import 'components/countries-row'
+//
+@import 'components/countries-column'
+//
+@import 'components/module-teaser2'
+//
+@import 'components/module-category'
+//
+@import 'components/module-search'
+//
+@import 'components/module-category-teaser'
+//
+@import 'components/button-more'
+//
+@import 'components/module-themes'
+//
+@import 'components/module-top'
+//
+@import 'components/module-text'
+//
+@import 'components/module-list'
+//
+@import 'components/multi-section'
+@import 'components/breadcrumbs'
+
+.design8
+  overflow-x: hidden
+  .main-structure
+    background-color: var(--bg-color)
+    padding-bottom: 20px
+    &__column_center
+      max-width: calc(var(--main-width) + var(--gap-main) * 2)
+      margin: 0 auto
+  .decorative-line
+    height: 1px
+    background-color: #C2C2C2
+    margin: 45px 0 37px
+  .banner-wrapper
+    width: 100%
+    padding: 25px 0
+    background-color: #F6F6F6
+    a
+      width: fit-content
+      display: block
+      margin: 0 auto
+    .banner
+      width: unset
+      margin: 0 auto
+  .outer-gap-elem
+    margin: var(--gap-main) 0
+    @include media('md')
+      padding: var(--gap-main-mobile)
+    &__module-home
+      margin-top: 28px
+      margin-bottom: 37px
+    &__banner
+      margin: 37px 0 21px
+    &__banner-vertical
+      margin: 62px 0 0 0
+    &__module-names
+      margin-top: 22px
+      margin-bottom: 1px
+    &__module-countries
+      margin-top: 10px
+      margin-bottom: 23px
+    &__module-letters
+      margin-top: -4px
+      margin-bottom: 29px
+    &__countries-row
+      margin: 10px
+    &__countries-column
+      margin-top: -4px
+    &__module-teaser
+      margin-top: -5px
+      margin-bottom: -5px
+    &__module-teaser2
+      margin-top: -4px
+      margin-bottom: -6px
+      &--big
+        margin-top: 27px
+    &__module-teaser3
+      margin-top: -19px
+    &__breadcrumbs
+      margin: 9px 20px
+    &__module-category
+      margin: 43px 28px 0 19px
+      &--sm
+        margin-top: 11px
+    &__module-search
+      margin-top: 25px
+    &__module-category-teaser
+      margin-top: 42px
+    &__module-text
+      margin-top: 28px
+      //margin-bottom: -20px
+    &__module-list
+      margin-top: -5px
+
+  .small-block
+    max-width: 700px
+    width: 100%
+    margin: 0 auto
+  .category 
+    .module4 .module-desc
+      margin-bottom: -5px
+      margin-top: 7px
+    .outer-gap-elem__module-names
+      margin-top: -6px
+    //font-family: var(--font-family)
+    //font-size: 22px
+    //letter-spacing: -2%

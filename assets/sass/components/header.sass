@@ -1,0 +1,106 @@
+.design8
+  .outer-gap-elem_header
+    padding: 0 !important
+  .header
+    &__panel
+      padding-left: 16px
+      @include media('xs')
+        padding-left: 0
+    &__panel-inner
+      display: flex
+      min-height: 72px
+      align-items: center
+      position: relative
+      @include media('xs')
+        margin-right: 0
+        min-height: 50px
+    &__logo
+      margin: 3px 0px 0 1px
+      img
+        @include media('xs')
+          width: 106px !important
+          margin-left: var(--gap-main-mobile)
+    &__nav
+      margin: 3px 0 0 13px
+      &__list
+        height: 100%
+        display: flex
+        align-items: center
+        width: 100%
+        overflow-x: auto
+        overflow-y: hidden
+        // scroll-behavior: smooth
+        // scroll-snap-type: x mandatory
+        padding-left: calc(var(--gap-main) - 3px)
+        padding-right: calc(var(--gap-main) - 3px)
+        scrollbar-width: none
+        @include media('xs')
+          padding-left: calc(var(--gap-main-mobile) - 3px)
+          padding-right: calc(var(--gap-main-mobile) - 3px)
+        &::-webkit-scrollbar
+          display: none
+          width: 0
+          height: 0
+      &__list.no-pointer &__link
+        pointer-events: none
+        user-select: none
+      &__item
+        height: 100%
+        display: flex
+        justify-content: center
+
+      &__item:last-child
+        padding-right: 0
+      &__link
+        padding: 0 17px
+        flex-shrink: 1
+        text-transform: uppercase
+        color: var(--header-text-color)
+        font-family: var(--font-family)
+        font-size: 22px
+        font-weight: 600
+        line-height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        height: inherit
+        position: relative
+        &:before, &:after
+          content: attr(data-text)
+          text-decoration: inherit
+        &:before
+          font-weight: 700
+          visibility: hidden
+        &:after
+          position: absolute
+        &.router-link-active::after
+          font-weight: 700
+        &:hover::before
+          visibility: visible
+        &:hover:after
+          display: none
+        img
+          position: absolute
+          right: 0
+          width: 11px
+          height: 10px
+          margin-top: 4px
+      &__item:first-child &__link
+        padding-left: 0
+      &__item:last-child &__link
+        padding-right: 0
+    &__menu
+      display: flex
+      position: absolute
+      right: 0
+      padding: 3px 16px 0 0
+      &__menu-burger
+        display: flex
+        &::before
+          width: 1px
+          height: 28px
+          display: block
+          background-color: var(--header-text-color)
+          content: " "
+          flex-shrink: 0
+          margin: 0 17px 0 19px

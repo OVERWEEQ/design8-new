@@ -1,0 +1,44 @@
+.design8
+    .module-desc
+        font-family: var(--second-family)
+        font-size: 18px
+        font-weight: 400
+        line-height: 30px
+        text-align: left
+        color: var(--text-color)
+        margin: 15px 0 14px
+        &__list
+            margin-top: 26px
+            padding-left: 13px
+            margin-bottom: 26px
+            &__item
+                height: 26px
+                &::before
+                    content: " "
+                    background: url("/images/design8/icons/dot.svg")
+                    width: 6px
+                    height: 6px
+                    display: inline-block
+                    margin-right: 14px
+                    position: relative
+                    top: -5px
+        &:first-child 
+            margin-top: -9px
+        &--big
+            font-family: var(--font-family)
+            font-size: 22px
+            font-weight: 400
+            line-height: 32px
+            letter-spacing: -0.02em
+            text-align: left
+            color: var(--text-color)
+            margin: 15px 0 14px
+            a
+                color: var(--text-color)
+                text-decoration: underline
+        &--shorter
+            line-height: 26px
+            margin: 15px 0 26px
+        a
+            color: var(--text-color)
+            text-decoration: underline

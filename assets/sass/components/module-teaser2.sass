@@ -1,0 +1,53 @@
+.design8
+    .module-teaser
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        row-gap: 26px
+        column-gap: 16px
+        margin-top: 21px
+        &__subtitle
+            font-family: var(--font-family)
+            font-size: 19px
+            font-weight: 600
+            line-height: 27px
+            letter-spacing: -0.02em
+            color: var(--highlight-color)
+        &__title
+            font-family: var(--font-family)
+            font-size: 21px
+            font-weight: 600
+            line-height: 24px
+            letter-spacing: -0.03em
+            color: var(--header-text-color)
+            padding-right: 1px
+        &--category
+            row-gap: 35px
+            .module-teaser
+                &__title
+                    font-size: 22px
+                    letter-spacing: -0.01em
+                    background-color: #E9F7F2
+                    padding: 8px 13px 13px
+            &--nobg
+                margin-top: 9px
+                .module-teaser
+                    &__title
+                        font-size: 22px
+                        background-color: unset
+                        letter-spacing: -0.01em
+                        padding: 2px 0px 9px
+                
+
+        &--3
+            margin-top: 7px
+            grid-template-columns: repeat(3, 1fr)
+            row-gap: 37px
+            .module-teaser
+                &__subtitle
+                    text-align: center
+                    letter-spacing: 0
+                &__title
+                    text-align: center
+                    letter-spacing: 0
+                    font-size: 22px
+                    margin-top: -4px

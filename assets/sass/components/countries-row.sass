@@ -1,0 +1,46 @@
+.design8
+    .countries-row
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-gap: 5px
+        a
+            text-align: left
+            border-radius: 3px
+            padding: 10px
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            background-color: #f9f9f9
+            white-space: nowrap
+            border-bottom: 1px solid #f0f0f0
+            &:hover
+                color: #391d56
+                text-decoration: underline
+                text-underline-offset: 1px
+                background-color: #f0f0f0
+        &__flag
+            display: flex
+            align-items: center
+            background: url('/images/design8/countries/flags.webp')no-repeat
+            background-position-x: 0%
+            background-position-y: 0%
+            margin: 0
+            padding: 0
+            width: 50px
+            height: 29.5px
+        &__more, &__name
+            font-size: 16px
+            font-family: var(--font-family)
+            color: #643296
+        &__name
+            margin-left: 60px
+        &__more
+            background-color: #E9F7F2 !important
+            color: #696969 !important
+            font-size: 19px
+            font-weight: 400
+            line-height: 32px
+            letter-spacing: -0.02em  
+            justify-content: center
+            text-transform: uppercase
